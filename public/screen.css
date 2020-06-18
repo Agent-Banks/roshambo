@@ -16,6 +16,31 @@ section {
   justify-content: space-around
 }
 
-article {}
+header {
+  display: flex;
+  justify-content: center;
+}
 
-fieldset {}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset button {
+  /*border: none;
+  background-color: white;
+  */
+}
+
+fieldset img {}
+
+.scoreboard h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
