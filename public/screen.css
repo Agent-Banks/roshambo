@@ -15,12 +15,16 @@ body {
 
 section {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 header {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 article {
@@ -43,5 +47,4 @@ fieldset img {}
 
 .scoreboard h2 {
   text-align: center;
-  font-size: 1rem;
 }
