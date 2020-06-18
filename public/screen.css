@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,6 +10,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Space Mono', monospace;
 }
 
 section {
@@ -33,14 +35,13 @@ fieldset {
 }
 
 fieldset button {
-  /*border: none;
+  border: none;
   background-color: white;
-  */
 }
 
 fieldset img {}
 
 .scoreboard h2 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
