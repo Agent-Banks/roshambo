@@ -11,6 +11,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: 'Space Mono', monospace;
+  color: #FE9000;
 }
 
 section {
@@ -18,9 +19,14 @@ section {
   justify-content: space-around;
 }
 
+main {
+  background-color: #3C6997;
+}
+
 header {
   display: flex;
   justify-content: center;
+  background-color: #094074;
 }
 
 h2 {
@@ -40,11 +46,18 @@ fieldset {
 
 fieldset button {
   border: none;
-  background-color: white;
+  background-color: #5ADBFF;
+  border-radius: 20%;
 }
 
-fieldset img {}
+fieldset img {
+  background-color: #5ADBFF;
+}
 
 .scoreboard h2 {
   text-align: center;
+}
+
+footer {
+  background-color: #094074;
 }
