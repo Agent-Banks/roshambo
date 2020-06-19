@@ -11,7 +11,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: 'Space Mono', monospace;
-  color: #FE9000;
+  color: #fe9000;
 }
 
 section {
@@ -20,7 +20,7 @@ section {
 }
 
 main {
-  background-color: #3C6997;
+  background-color: #3c6997;
 }
 
 header {
@@ -46,12 +46,12 @@ fieldset {
 
 fieldset button {
   border: none;
-  background-color: #5ADBFF;
+  background-color: #5adbff;
   border-radius: 20%;
 }
 
 fieldset img {
-  background-color: #5ADBFF;
+  background-color: #5adbff;
 }
 
 .scoreboard h2 {
@@ -60,4 +60,8 @@ fieldset img {
 
 footer {
   background-color: #094074;
+}
+
+.playerOneChoiceImg {
+  display: block;
 }

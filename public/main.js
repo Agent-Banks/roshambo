@@ -1,11 +1,17 @@
-playerOneScore = 0
-playerTwoScore = 0
-ties = 0
-playerOneChoice = ''
-playerTwoChoice = ''
+let playerOneScore = 0
+let playerTwoScore = 0
+let ties = 0
+let playerOneChoice = ''
+let playerTwoChoice = ''
+
+function handlePlayerOneRockChoice(event) {
+  document.querySelector('.playerOneCard .playerOneChoiceImg').src =
+    'https://www.rpsgame.org/assets/img/rock.svg'
+}
 
 const main = () => {
-  const playerOne
+  const playerOneRock = document.querySelector(' .playerOneCard .rock ')
+  playerOneRock.addEventListener('click', handlePlayerOneRockChoice)
 }
 
 document.addEventListener('DOMContentLoaded', main)
