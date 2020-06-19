@@ -1,7 +1,11 @@
+playerOneScore = 0
+playerTwoScore = 0
+ties = 0
+playerOneChoice = ''
+playerTwoChoice = ''
+
 const main = () => {
-  if (document.querySelector('h1.hello-world')) {
-    document.querySelector('h1.hello-world').textContent = 'Hello, World!'
-  }
+  const playerOne
 }
 
 document.addEventListener('DOMContentLoaded', main)
