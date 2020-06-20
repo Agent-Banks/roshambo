@@ -12,6 +12,8 @@ body {
   min-height: 100%;
   font-family: 'Space Mono', monospace;
   color: #fe9000;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -21,6 +23,7 @@ section {
 
 main {
   background-color: #3c6997;
+  flex: 1 0 auto;
 }
 
 header {
@@ -60,4 +63,10 @@ fieldset img {
 
 footer {
   background-color: #094074;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
 }

@@ -128,6 +128,9 @@ function handlePlayerTwoEndTurn() {
 }
 
 function handleStartGame() {
+  const showPlayers = document.querySelector(' .hidden')
+  showPlayers.style.display = 'flex'
+
   const playerTwoCard = document.querySelector(' .playerTwoCard')
   playerTwoCard.style.display = 'none'
 
@@ -144,6 +147,8 @@ function handleStartGame() {
 }
 
 function handleRestartGame() {
+  const hidePlayers = document.querySelector(' .hidden')
+  hidePlayers.style.display = 'none'
   const startGame = document.querySelector('.gameEndLabel')
   startGame.textContent = 'Press Start Game to Play'
 
