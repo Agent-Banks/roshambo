@@ -51,6 +51,17 @@ function handlePlayerTwoScissorsChoice() {
     'https://www.rpsgame.org/assets/img/scissors.svg'
   playerTwoChoice = 'scissors'
 }
+function handlePlayerTwoLizardChoice() {
+  document.querySelector('.playerTwoCard .playerTwoChoiceImg').src =
+    'https://rpsls.net/images/lizard.png'
+  playerTwoChoice = 'lizard'
+}
+
+function handlePlayerTwoSpockChoice() {
+  document.querySelector('.playerTwoCard .playerTwoChoiceImg').src =
+    'https://rpsls.net/images/spock.png'
+  playerTwoChoice = 'spock'
+}
 
 function handlePlayerOneEndTurn() {
   if (playerOneChoice === '') {
@@ -183,6 +194,12 @@ const main = () => {
 
   const playerTwoScissors = document.querySelector(' .playerTwoCard .scissors ')
   playerTwoScissors.addEventListener('click', handlePlayerTwoScissorsChoice)
+
+  const playerTwoLizard = document.querySelector(' .playerTwoCard .lizard ')
+  playerTwoLizard.addEventListener('click', handlePlayerTwoLizardChoice)
+
+  const playerTwoSpock = document.querySelector(' .playerTwoCard .spock ')
+  playerTwoSpock.addEventListener('click', handlePlayerTwoSpockChoice)
 
   const startGameButton = document.querySelector(
     '.gameButtonsSection .startRound'
