@@ -113,6 +113,11 @@ function handleStartGame() {
 
   const startGameButton = document.querySelector('.gameButtonsSection')
   startGameButton.style.display = 'none'
+
+  document.querySelector('.playerTwoCard .playerTwoChoiceImg').src = ''
+  document.querySelector('.playerOneCard .playerOneChoiceImg').src = ''
+  playerOneChoice = ''
+  playerTwoChoice = ''
 }
 
 const main = () => {
