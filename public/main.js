@@ -22,6 +22,18 @@ function handlePlayerOneScissorsChoice() {
   playerOneChoice = 'scissors'
 }
 
+function handlePlayerOneLizardChoice() {
+  document.querySelector('.playerOneCard .playerOneChoiceImg').src =
+    'https://rpsls.net/images/lizard.png'
+  playerOneChoice = 'lizard'
+}
+
+function handlePlayerOneSpockChoice() {
+  document.querySelector('.playerOneCard .playerOneChoiceImg').src =
+    'https://rpsls.net/images/spock.png'
+  playerOneChoice = 'spock'
+}
+
 function handlePlayerTwoRockChoice() {
   document.querySelector('.playerTwoCard .playerTwoChoiceImg').src =
     'https://www.rpsgame.org/assets/img/rock.svg'
@@ -156,6 +168,12 @@ const main = () => {
 
   const playerOneScissors = document.querySelector(' .playerOneCard .scissors ')
   playerOneScissors.addEventListener('click', handlePlayerOneScissorsChoice)
+
+  const playerOneLizard = document.querySelector(' .playerOneCard .lizard ')
+  playerOneLizard.addEventListener('click', handlePlayerOneLizardChoice)
+
+  const playerOneSpock = document.querySelector(' .playerOneCard .spock ')
+  playerOneSpock.addEventListener('click', handlePlayerOneSpockChoice)
 
   const playerTwoRock = document.querySelector(' .playerTwoCard .rock ')
   playerTwoRock.addEventListener('click', handlePlayerTwoRockChoice)
