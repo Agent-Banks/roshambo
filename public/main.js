@@ -59,9 +59,13 @@ function handlePlayerTwoEndTurn() {
     (playerOneChoice === 'scissors' && playerTwoChoice === 'paper') ||
     (playerOneChoice === 'paper' && playerTwoChoice === 'rock')
   ) {
-    return 'Player 1 won!'
+    const playerOneWin = document.querySelector('.playerOneScore')
+    playerOneWin.textContent++
+    const endLabel = document.querySelector('.gameEndLabel')
+    endLabel.textContent = 'Player One Wins!'
   } else {
-    return 'Player 2 won!'
+    const playerTwoWin = document.querySelector('.playerTwoScore')
+    playerTwoWin.textContent++
   }
 }
 
