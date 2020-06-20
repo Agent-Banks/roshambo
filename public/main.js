@@ -41,6 +41,12 @@ function handlePlayerTwoScissorsChoice() {
 }
 
 function handlePlayerOneEndTurn() {
+  if (playerOneChoice === '') {
+    const endLabel = document.querySelector('.gameEndLabel')
+    endLabel.textContent = 'You must pick before ending turn!'
+    return
+  }
+
   const playerOneCard = document.querySelector(' .playerOneCard')
   playerOneCard.style.display = 'none'
 
@@ -49,6 +55,12 @@ function handlePlayerOneEndTurn() {
 }
 
 function handlePlayerTwoEndTurn() {
+  if (playerOneChoice === '') {
+    const endLabel = document.querySelector('.gameEndLabel')
+    endLabel.textContent = 'You must pick before ending turn!'
+    return
+  }
+
   const playerOneCard = document.querySelector(' .playerOneCard')
   playerOneCard.style.display = 'flex'
 
