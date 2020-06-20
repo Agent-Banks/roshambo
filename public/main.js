@@ -43,15 +43,32 @@ function handlePlayerTwoScissorsChoice() {
 function handlePlayerOneEndTurn() {
   const playerOneCard = document.querySelector(' .playerOneCard')
   playerOneCard.style.display = 'none'
+
+  const playerTwoCard = document.querySelector(' .playerTwoCard')
+  playerTwoCard.style.display = 'flex'
 }
 
 function handlePlayerTwoEndTurn() {
   const playerOneCard = document.querySelector(' .playerOneCard')
   playerOneCard.style.display = 'flex'
 
+  const gameButtons = document.querySelector('.gameButtonsSection')
+  gameButtons.style.display = 'flex'
+  gameButtons.style.justifyContent = 'space-around'
+
+  const startGameButton = document.querySelector(
+    '.gameButtonsSection .startRound'
+  )
+  startGameButton.textContent = 'Start New Round'
+
   if (playerOneChoice === playerTwoChoice) {
     const tie = document.querySelector(' .tieScore')
-    tie.textContent++
+    ties++
+    tie.textContent = `${ties}`
+
+    const endLabel = document.querySelector('.gameEndLabel')
+    endLabel.textContent = 'Tie!'
+    return
   }
 
   if (
@@ -60,13 +77,30 @@ function handlePlayerTwoEndTurn() {
     (playerOneChoice === 'paper' && playerTwoChoice === 'rock')
   ) {
     const playerOneWin = document.querySelector('.playerOneScore')
-    playerOneWin.textContent++
+    playerOneScore++
+    playerOneWin.textContent = `${playerOneScore}`
+
     const endLabel = document.querySelector('.gameEndLabel')
     endLabel.textContent = 'Player One Wins!'
   } else {
     const playerTwoWin = document.querySelector('.playerTwoScore')
-    playerTwoWin.textContent++
+    playerTwoScore++
+    playerTwoWin.textContent = `${playerTwoScore}`
+
+    const endLabel = document.querySelector('.gameEndLabel')
+    endLabel.textContent = 'Player Two Wins!'
   }
+}
+
+function handleStartGame() {
+  const playerTwoCard = document.querySelector(' .playerTwoCard')
+  playerTwoCard.style.display = 'none'
+
+  const startGame = document.querySelector('.gameEndLabel')
+  startGame.textContent = 'Game On!'
+
+  const startGameButton = document.querySelector('.gameButtonsSection')
+  startGameButton.style.display = 'none'
 }
 
 const main = () => {
@@ -87,6 +121,9 @@ const main = () => {
 
   const playerTwoScissors = document.querySelector(' .playerTwoCard .scissors ')
   playerTwoScissors.addEventListener('click', handlePlayerTwoScissorsChoice)
+
+  const startGameButton = document.querySelector('.gameButtonsSection')
+  startGameButton.addEventListener('click', handleStartGame)
 
   const endPlayerOneTurn = document.querySelector(
     ' .playerOneCard .endPlayerOneTurn '
