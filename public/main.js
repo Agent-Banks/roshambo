@@ -96,6 +96,16 @@ function handlePlayerTwoEndTurn() {
   )
   startGameButton.textContent = 'Start New Round'
 
+  const finishP1TurnButtons = document.querySelector(
+    ' .playerOneCard .endPlayerOneTurn '
+  )
+
+  const finishP2TurnButtons = document.querySelector(
+    ' .playerTwoCard .endPlayerTwoTurn '
+  )
+  finishP1TurnButtons.disabled = true
+  finishP2TurnButtons.disabled = true
+
   if (playerOneChoice === playerTwoChoice) {
     const tie = document.querySelector(' .tieScore')
     ties++
@@ -135,6 +145,16 @@ function handlePlayerTwoEndTurn() {
 }
 
 function handleStartGame() {
+  const finishP1TurnButtons = document.querySelector(
+    ' .playerOneCard .endPlayerOneTurn '
+  )
+
+  const finishP2TurnButtons = document.querySelector(
+    ' .playerTwoCard .endPlayerTwoTurn '
+  )
+  finishP1TurnButtons.disabled = false
+  finishP2TurnButtons.disabled = false
+
   const showPlayers = document.querySelector(' .hidden')
   showPlayers.style.display = 'flex'
 
