@@ -99,16 +99,14 @@ function handlePlayerTwoEndTurn() {
   )
   startGameButton.textContent = 'Start New Round'
 
-  const finishP1Buttons = document.querySelector(' .playerOneButtons')
+  const playerOneButtons = document.querySelector(' .playerOneButtons')
+  playerOneButtons.style.display = 'none'
 
-  finishP1Buttons.style.display = 'none'
-
-  const finishP2Buttons = document.querySelector(' .playerTwoButtons')
-
-  finishP2Buttons.style.display = 'none'
+  const playerTwoButtons = document.querySelector(' .playerTwoButtons')
+  playerTwoButtons.style.display = 'none'
 
   if (playerOneChoice === playerTwoChoice) {
-    const tie = document.querySelector(' .tieScore')
+    const tie = document.querySelector('.tieScore')
     ties++
     tie.textContent = `${ties}`
 
@@ -146,13 +144,11 @@ function handlePlayerTwoEndTurn() {
 }
 
 function handleStartGame() {
-  const finishP1Buttons = document.querySelector(' .playerOneButtons')
+  const playerOneButtons = document.querySelector(' .playerOneButtons')
+  playerOneButtons.style.display = 'flex'
 
-  finishP1Buttons.style.display = 'flex'
-
-  const finishP2Buttons = document.querySelector(' .playerTwoButtons')
-
-  finishP2Buttons.style.display = 'flex'
+  const playerTwoButtons = document.querySelector(' .playerTwoButtons')
+  playerTwoButtons.style.display = 'flex'
 
   const showPlayers = document.querySelector(' .allPlayers')
   showPlayers.style.display = 'flex'
@@ -180,7 +176,7 @@ function handleRestartGame() {
   scoreBoardDisplay.style.display = 'none'
 
   const startGame = document.querySelector('.gameEndLabel')
-  startGame.textContent = 'Press Start Game to Play'
+  startGame.textContent = 'Press Start to Play'
 
   document.querySelector('.playerTwoCard .playerTwoChoiceImg').src = ''
   document.querySelector('.playerOneCard .playerOneChoiceImg').src = ''
@@ -206,35 +202,45 @@ function handleRestartGame() {
 }
 
 const main = () => {
-  const playerOneRock = document.querySelector(' .playerOneCard .rock ')
-  playerOneRock.addEventListener('click', handlePlayerOneRockChoice)
+  const playerOneChoiceRock = document.querySelector('.playerOneCard .rock')
+  playerOneChoiceRock.addEventListener('click', handlePlayerOneRockChoice)
 
-  const playerOnePaper = document.querySelector(' .playerOneCard .paper ')
-  playerOnePaper.addEventListener('click', handlePlayerOnePaperChoice)
+  const playerOneChoicePaper = document.querySelector('.playerOneCard .paper')
+  playerOneChoicePaper.addEventListener('click', handlePlayerOnePaperChoice)
 
-  const playerOneScissors = document.querySelector(' .playerOneCard .scissors ')
-  playerOneScissors.addEventListener('click', handlePlayerOneScissorsChoice)
+  const playerOneChoiceScissors = document.querySelector(
+    '.playerOneCard .scissors'
+  )
+  playerOneChoiceScissors.addEventListener(
+    'click',
+    handlePlayerOneScissorsChoice
+  )
 
-  const playerOneLizard = document.querySelector(' .playerOneCard .lizard ')
-  playerOneLizard.addEventListener('click', handlePlayerOneLizardChoice)
+  const playerOneChoiceLizard = document.querySelector('.playerOneCard .lizard')
+  playerOneChoiceLizard.addEventListener('click', handlePlayerOneLizardChoice)
 
-  const playerOneSpock = document.querySelector(' .playerOneCard .spock ')
-  playerOneSpock.addEventListener('click', handlePlayerOneSpockChoice)
+  const playerOneChoiceSpock = document.querySelector('.playerOneCard .spock')
+  playerOneChoiceSpock.addEventListener('click', handlePlayerOneSpockChoice)
 
-  const playerTwoRock = document.querySelector(' .playerTwoCard .rock ')
-  playerTwoRock.addEventListener('click', handlePlayerTwoRockChoice)
+  const playerTwoChoiceRock = document.querySelector('.playerTwoCard .rock')
+  playerTwoChoiceRock.addEventListener('click', handlePlayerTwoRockChoice)
 
-  const playerTwoPaper = document.querySelector(' .playerTwoCard .paper ')
-  playerTwoPaper.addEventListener('click', handlePlayerTwoPaperChoice)
+  const playerTwoChoicePaper = document.querySelector('.playerTwoCard .paper')
+  playerTwoChoicePaper.addEventListener('click', handlePlayerTwoPaperChoice)
 
-  const playerTwoScissors = document.querySelector(' .playerTwoCard .scissors ')
-  playerTwoScissors.addEventListener('click', handlePlayerTwoScissorsChoice)
+  const playerTwoChoiceScissors = document.querySelector(
+    '.playerTwoCard .scissors'
+  )
+  playerTwoChoiceScissors.addEventListener(
+    'click',
+    handlePlayerTwoScissorsChoice
+  )
 
-  const playerTwoLizard = document.querySelector(' .playerTwoCard .lizard ')
-  playerTwoLizard.addEventListener('click', handlePlayerTwoLizardChoice)
+  const playerTwoChoiceLizard = document.querySelector('.playerTwoCard .lizard')
+  playerTwoChoiceLizard.addEventListener('click', handlePlayerTwoLizardChoice)
 
-  const playerTwoSpock = document.querySelector(' .playerTwoCard .spock ')
-  playerTwoSpock.addEventListener('click', handlePlayerTwoSpockChoice)
+  const playerTwoChoiceSpock = document.querySelector('.playerTwoCard .spock')
+  playerTwoChoiceSpock.addEventListener('click', handlePlayerTwoSpockChoice)
 
   const startGameButton = document.querySelector(
     '.gameButtonsSection .startRound'
@@ -242,12 +248,12 @@ const main = () => {
   startGameButton.addEventListener('click', handleStartGame)
 
   const endPlayerOneTurn = document.querySelector(
-    ' .playerOneCard .endPlayerOneTurn '
+    '.playerOneCard .endPlayerOneTurn'
   )
   endPlayerOneTurn.addEventListener('click', handlePlayerOneEndTurn)
 
   const endPlayerTwoTurn = document.querySelector(
-    ' .playerTwoCard .endPlayerTwoTurn '
+    '.playerTwoCard .endPlayerTwoTurn'
   )
   endPlayerTwoTurn.addEventListener('click', handlePlayerTwoEndTurn)
 
