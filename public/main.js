@@ -156,11 +156,11 @@ function handleStartGame() {
   const playerTwoCard = document.querySelector(' .playerTwoCard')
   playerTwoCard.style.display = 'none'
 
-  const startGame = document.querySelector('.gameEndLabel')
-  startGame.textContent = 'Game On!'
+  const changeGameLabel = document.querySelector('.gameEndLabel')
+  changeGameLabel.textContent = 'Game On!'
 
-  const startGameButton = document.querySelector('.gameButtonsSection')
-  startGameButton.style.display = 'none'
+  const gameButtons = document.querySelector('.gameButtonsSection')
+  gameButtons.style.display = 'none'
 
   document.querySelector('.playerTwoCard .playerTwoChoiceImg').src = ''
   document.querySelector('.playerOneCard .playerOneChoiceImg').src = ''
@@ -175,8 +175,8 @@ function handleRestartGame() {
   const scoreBoardDisplay = document.querySelector('.scoreboard')
   scoreBoardDisplay.style.display = 'none'
 
-  const startGame = document.querySelector('.gameEndLabel')
-  startGame.textContent = 'Press Start to Play'
+  const startGameLabel = document.querySelector('.gameEndLabel')
+  startGameLabel.textContent = 'Press Start to Play'
 
   document.querySelector('.playerTwoCard .playerTwoChoiceImg').src = ''
   document.querySelector('.playerOneCard .playerOneChoiceImg').src = ''
