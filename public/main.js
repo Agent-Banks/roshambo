@@ -84,6 +84,9 @@ function handlePlayerTwoEndTurn() {
     return
   }
 
+  const scoreBoardDisplay = document.querySelector('.scoreboard')
+  scoreBoardDisplay.style.display = 'flex'
+
   const playerOneCard = document.querySelector(' .playerOneCard')
   playerOneCard.style.display = 'flex'
 
@@ -172,6 +175,10 @@ function handleStartGame() {
 function handleRestartGame() {
   const hidePlayers = document.querySelector(' .allPlayers')
   hidePlayers.style.display = 'none'
+
+  const scoreBoardDisplay = document.querySelector('.scoreboard')
+  scoreBoardDisplay.style.display = 'none'
+
   const startGame = document.querySelector('.gameEndLabel')
   startGame.textContent = 'Press Start Game to Play'
 

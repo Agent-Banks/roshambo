@@ -75,6 +75,10 @@ fieldset img {
   text-align: center;
 }
 
+.scoreboard {
+  display: none;
+}
+
 footer {
   background-color: #094074;
   display: flex;
