@@ -109,7 +109,14 @@ function handlePlayerTwoEndTurn() {
   if (
     (playerOneChoice === 'rock' && playerTwoChoice === 'scissors') ||
     (playerOneChoice === 'scissors' && playerTwoChoice === 'paper') ||
-    (playerOneChoice === 'paper' && playerTwoChoice === 'rock')
+    (playerOneChoice === 'paper' && playerTwoChoice === 'rock') ||
+    (playerOneChoice === 'rock' && playerTwoChoice === 'lizard') ||
+    (playerOneChoice === 'spock' && playerTwoChoice === 'scissors') ||
+    (playerOneChoice === 'lizard' && playerTwoChoice === 'spock') ||
+    (playerOneChoice === 'scissors' && playerTwoChoice === 'lizard') ||
+    (playerOneChoice === 'lizard' && playerTwoChoice === 'paper') ||
+    (playerOneChoice === 'paper' && playerTwoChoice === 'spock') ||
+    (playerOneChoice === 'spock' && playerTwoChoice === 'rock')
   ) {
     const playerOneWin = document.querySelector('.playerOneScore')
     playerOneScore++
