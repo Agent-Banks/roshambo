@@ -96,15 +96,13 @@ function handlePlayerTwoEndTurn() {
   )
   startGameButton.textContent = 'Start New Round'
 
-  const finishP1TurnButtons = document.querySelector(
-    ' .playerOneCard .endPlayerOneTurn '
-  )
+  const finishP1Buttons = document.querySelector(' .playerOneButtons')
 
-  const finishP2TurnButtons = document.querySelector(
-    ' .playerTwoCard .endPlayerTwoTurn '
-  )
-  finishP1TurnButtons.disabled = true
-  finishP2TurnButtons.disabled = true
+  finishP1Buttons.style.display = 'none'
+
+  const finishP2Buttons = document.querySelector(' .playerTwoButtons')
+
+  finishP2Buttons.style.display = 'none'
 
   if (playerOneChoice === playerTwoChoice) {
     const tie = document.querySelector(' .tieScore')
@@ -145,17 +143,15 @@ function handlePlayerTwoEndTurn() {
 }
 
 function handleStartGame() {
-  const finishP1TurnButtons = document.querySelector(
-    ' .playerOneCard .endPlayerOneTurn '
-  )
+  const finishP1Buttons = document.querySelector(' .playerOneButtons')
 
-  const finishP2TurnButtons = document.querySelector(
-    ' .playerTwoCard .endPlayerTwoTurn '
-  )
-  finishP1TurnButtons.disabled = false
-  finishP2TurnButtons.disabled = false
+  finishP1Buttons.style.display = 'flex'
 
-  const showPlayers = document.querySelector(' .hidden')
+  const finishP2Buttons = document.querySelector(' .playerTwoButtons')
+
+  finishP2Buttons.style.display = 'flex'
+
+  const showPlayers = document.querySelector(' .allPlayers')
   showPlayers.style.display = 'flex'
 
   const playerTwoCard = document.querySelector(' .playerTwoCard')
@@ -174,7 +170,7 @@ function handleStartGame() {
 }
 
 function handleRestartGame() {
-  const hidePlayers = document.querySelector(' .hidden')
+  const hidePlayers = document.querySelector(' .allPlayers')
   hidePlayers.style.display = 'none'
   const startGame = document.querySelector('.gameEndLabel')
   startGame.textContent = 'Press Start Game to Play'

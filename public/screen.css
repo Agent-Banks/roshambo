@@ -43,6 +43,20 @@ article {
   align-items: center;
 }
 
+.playerOneButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerTwoButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 fieldset {
   border: none;
 }
@@ -67,6 +81,6 @@ footer {
   justify-content: center;
 }
 
-.hidden {
+.allPlayers {
   display: none;
 }
