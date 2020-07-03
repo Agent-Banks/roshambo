@@ -1,8 +1,8 @@
-# SDG Assignment 23 : 06 - 04 - Roshambo!
+# SDG Assignment 23 : Roshambo!
 
 Create a Rock-Paper-Scissor-Lizard-Spock game.
 
-![Suncoast Bank Demo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
+![Roshambo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
 
 ## Technologies used:
 HTML, CSS, & JavaScript
