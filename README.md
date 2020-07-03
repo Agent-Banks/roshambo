@@ -1,29 +1,11 @@
 # SDG Assignment 23 : 06 - 04 - Roshambo!
 
-Create a Roshambo (Rock-Paper-Scissors) game.
+![Suncoast Bank Demo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
 
-## Objectives
 
-- Work with JavaScript and the DOM
-- Practice conditional logic
+Create a Rock-Paper-Scissor-Lizard-Spock game.
 
-### Background
-
-See the Wikipedia page about
-[Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors)
-
-### How to get started
-
-- Get familiar with rock, paper, scissors if you haven't played before (or in a while)
-- Draw out on paper/whiteboard/computer the rough design of your application
-  - See _Explorer Mode_ for the UI requirements
-- Start by placing all the HTML elements on the page
-- Style the user interface
-- Write out in English, ALL the steps the application needs to take
-  - For example "When user one clicks on Rock, remember that user one chooses
-    Rock"
-
-### Explorer Mode
+## Requirements
 
 #### Part 1
 
@@ -42,13 +24,3 @@ See the Wikipedia page about
       Modify your game to allow the extra options!
 - [x] Have fun with the CSS by adding colors, animations, and effects to make the
       game more enjoyable
-
-### Part 3
-
-- [x] Find at least THREE codewar you have not completed from our daily warmups and complete them. If you don't have THREE incomplete codewar warmups, find some new ones to tackle. I encourage for those who want an extra level of challenge, just let me know which codewar you are solving.
-- [x] For each, copy your solution into a gist:  See https://gist.gitub.com and include those links in your homework comment.
-
-### Adventure Mode
-
-- [ ] Your game is currently only 1 vs 1, add the ability to add more computer or users players to the game
-
