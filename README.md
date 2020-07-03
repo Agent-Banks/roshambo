@@ -5,9 +5,9 @@ Create a Rock-Paper-Scissor-Lizard-Spock game.
 ![Suncoast Bank Demo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
 
 ## Technologies used:
-HTML, CSS, JavaScript
-## Requirements:
+HTML, CSS, & JavaScript
 
+## Requirements:
 #### Part 1
 - [x] There should be three buttons for Player One: Rock, Paper, Scissors
 - [x] There should be three buttons for Player Two: Rock, Paper, Scissors
