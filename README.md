@@ -1,11 +1,12 @@
 # SDG Assignment 23 : 06 - 04 - Roshambo!
 
-![Suncoast Bank Demo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
-
-
 Create a Rock-Paper-Scissor-Lizard-Spock game.
 
-## Requirements
+![Suncoast Bank Demo](https://github.com/codyb23/SDG-GIFS/blob/master/Roshambo.gif)
+
+## Technologies used:
+HTML, CSS, JavaScript
+## Requirements:
 
 #### Part 1
 - [x] There should be three buttons for Player One: Rock, Paper, Scissors
