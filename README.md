@@ -8,9 +8,6 @@ Create a Rock-Paper-Scissor-Lizard-Spock game.
 ## Requirements
 
 #### Part 1
-
-> NOTE: Complete part 1 before moving on to part 2
-
 - [x] There should be three buttons for Player One: Rock, Paper, Scissors
 - [x] There should be three buttons for Player Two: Rock, Paper, Scissors
 - [x] Player One should be able to select their throw
@@ -18,7 +15,6 @@ Create a Rock-Paper-Scissor-Lizard-Spock game.
 - [x] After both players make their selection, I should be told who won and the game should be over.
 
 #### Part 2
-
 - [x] You have heard about _Rock, Paper, Scissors_, but have you tried
       [_Rock, Paper, Scissors, Lizard, Spock_](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)?
       Modify your game to allow the extra options!
